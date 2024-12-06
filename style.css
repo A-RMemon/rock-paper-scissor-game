@@ -1,0 +1,123 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    /* background: #f7f7f7; */
+    background: linear-gradient(to bottom right, #2c3e50, #34495e);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    /* color: #333; */
+    flex-direction: column;
+}
+@keyframes fadein{
+    from{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+.container{
+    background: transparent;
+    animation: fadein 1s ease-in-out;
+    background: #fff;
+    padding: 20px 40px;
+    border-radius: 10px;
+    box-shadow: 0 4px 14px rgba(0, 0,0, 1);
+    text-align: center;
+    width: 400px;
+}
+#rock,
+#paper,
+#scissor{
+    border: none;
+    width: 75px;
+    height: 75px;
+    margin: 0.5rem;
+    border-radius: 10rem;
+    cursor: pointer;
+    transition:all 0.5s ease;
+    
+}
+.container img{
+    width: 75px;
+    height: 75px;
+    background-color: #f7f7f7;
+    
+    
+}
+h1 {
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 1.8rem;
+    margin-bottom: 20px;
+    color: #4CAF50;
+}
+button:hover {
+    transform: scale(1.1);
+}
+.child {
+    animation: fadein 1s ease-in-out;
+    margin-top: 20px;
+    padding: 20px 40 px;
+    width: 400px;
+    border: 1px solid;
+    text-align: center;
+    padding: 1rem;
+    text-transform: capitalize;
+    /* backdrop-filter: blur(100px); */
+    background: linear-gradient(to bottom right, #827bc5, #5f5e5e, #38275f);
+    box-shadow: 0 4px 14px rgba(0, 0,0, 1);
+    border-radius: 10px;
+
+
+}
+p {
+    font-size: 1.5em;
+    margin: 5px 0;
+    color: black;
+    font-weight: 600;
+    font-family: 'Courier New', Courier, monospace;    
+}
+
+#message {
+    font-size: 1.5em;
+    font-weight: bold;
+  
+}
+
+
+@media (max-width: 600px) {
+    .container {
+        width: 95%;
+    }
+
+    h1 {
+        font-size: 2em;
+    }
+    #rock,
+    #paper,
+    #scissor{
+        width: 50px;
+        height: 50px;     
+    }
+    .container img{
+        width: 50px;
+        height: 50px;
+        
+        
+    }
+    /* button {
+        font-size: 0.7em;
+    } */
+    .child{
+        width: 95%;
+    }
+
+}
